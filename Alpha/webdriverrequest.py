@@ -8,3 +8,4 @@ from selenium import webdriver
 driver = webdriver.Chrome()
 driver.get('http://m.weibo.com')
 driver.get('http://zhihu.com')
+driver.get('http://bilibili.com')

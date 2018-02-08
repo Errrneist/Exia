@@ -4,7 +4,7 @@
 
 import urllib.request
 
-response = urllib.request.urlopen('https://learningcatalytics.com/class_sessions/40001774#')
+response = urllib.request.urlopen('https://www.spacex.com')
 
 # Print the entire source of the website.
 print("I am about to print the contents of the website:")

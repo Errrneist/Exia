@@ -4,7 +4,6 @@
 
 price = 8.5
 weight = 7.5
-
 money = weight * price
 
 # 卧槽toString原来是这么写的啊

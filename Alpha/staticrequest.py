@@ -37,7 +37,7 @@ response = requests.get("https://lh3.googleusercontent.com/-tFrHVdnk0KQ"
 print(response.content)
 
 # Save the image of Rembrandt
-with open('./1.jpg', 'wb') as f:
+with open('./Rembrandt.jpg', 'wb') as f:
     f.write(response.content)
     f.close()
 

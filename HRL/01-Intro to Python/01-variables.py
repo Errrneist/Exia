@@ -9,3 +9,4 @@ money = weight * price
 
 # 卧槽toString原来是这么写的啊
 print('You need to pay this amount: ' + money.__str__())
+

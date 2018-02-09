@@ -18,3 +18,6 @@ angry = journalist + naive
 print('There is %.1f journalist and her naive status is %.2f so I am %.3f percent angry.' % (journalist, naive, angry))
 print('You hear me? I am %.02f%% angry!!!' % angry)
 
+percent = 0.25
+print('This is a percent of haas. This percent is %.2f%%' % (percent * 100))
+

@@ -1,4 +1,4 @@
-# PROJECT Exia
+# Project Trinnect
 ## Web design, Python programming, and data structure.
 * Developer: Hongjun Wu
 

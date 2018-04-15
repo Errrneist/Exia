@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>CSE 142/143 Output Comparison Tool</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+		<meta name="version" content="Summer 2008" />
+		<meta name="author" content="Marty Stepp" />
+		<meta name="company" content="University of Washington" />
+		<meta name="description" content="A 'diff' tool to compare homework assignment output for correctness." />
+
+		<meta name="keywords" content="Java, diff, output, programming, Marty Stepp, University of Washington, Washington, UW, computer science, Building Java Programs" />
+
+		<link rel="stylesheet" type="text/css" href="style.css" tppabs="https://courses.cs.washington.edu/courses/cse143x/16au/style.css" />
+		<link rel="stylesheet" type="text/css" href="diff.css" tppabs="https://courses.cs.washington.edu/courses/cse143x/16au/diff.css" />
+
+		<script type="text/javascript" src="../../../../ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js" tppabs="https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js"></script>
+		<script type="text/javascript" src="../../../../ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js" tppabs="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
+		<script type="text/javascript" src="diff.js" tppabs="https://courses.cs.washington.edu/courses/cse143x/16au/diff.js"></script>
+	</head>
+
+	<body>
+		<h1>
+			CSE 142/143 Output Comparison Tool
+		</h1>
+
+		<noscript>
+			<p class="error">
+				It appears that you don't have JavaScript enabled in your web browser.  This page requires JavaScript to work.  Please check your browser settings.  (In Internet Explorer you may need to tell it to allow this page's &quot;Active Content&quot;.)
+			</p>
+		</noscript>
+
+		<table class="maindifftable">
+			<tr>
+				<td>
+					Expected text: <span id="expectedchars">(0 characters selected)</span> <br />
+
+					<select id="homework">
+						<option value="">(choose an assignment)</option>
+						<optgroup label="HW10 (Huffman Encoding)" class="creativeend">
+							<option value="homework/10/short.code">short.code</option>
+							<option value="homework/10/hamlet.code">hamlet.code</option>
+						<optgroup label="HW9 (Anagrams)" class="creativeend">
+							<option value="homework/9/hw9-log1.txt">log for dict1.txt</option>
+							<option value="homework/9/hw9-log2.txt">log for dict3.txt</option>
+							<option value="homework/9/hw9-log3.txt">log for dict4.txt</option>
+						<optgroup label="HW7 (Hangman)" class="creativeend">
+							<option value="homework/7/hw7-log1.txt">log 1: dictionary2.txt, SHOW_COUNT=true</option>
+							<option value="homework/7/hw7-log2.txt">log 2: dictionary2.txt, SHOW_COUNT=true</option>
+							<option value="homework/7/hw7-log3.txt">log 3: dictionary2.txt, SHOW_COUNT=true</option>
+							<option value="homework/7/hw7-log4.txt">log 4: dictionary.txt, SHOW_COUNT=true</option>
+							<option value="homework/7/hw7-log5.txt">log 5: dictionary.txt, SHOW_COUNT=false</option>
+							<option value="homework/7/hw7-log6.txt">log 6: dictionary.txt, SHOW_COUNT=false</option>
+							<option value="homework/7/hw7-log7.txt">log 7: dictionary.txt, SHOW_COUNT=false</option>
+							<option value="homework/7/hw7-log8.txt">log 8: dictionary.txt, SHOW_COUNT=false</option>
+							<option value="homework/7/hw7-log9.txt">log 9: dictionary.txt, SHOW_COUNT=false</option>
+						<optgroup label="HW6 (Assassin)">
+							<option value="homework/6/hw6-log1.txt">log for names1.txt</option>
+							<option value="homework/6/hw6-log2.txt">log for names2.txt</option>
+							<option value="homework/6/hw6-log3.txt">log for names3.txt</option>
+							<option value="homework/6/hw6-log4.txt">log for names.txt</option>
+						<optgroup label="HW4 (Personality)" class="creativeend">
+							<option value="homework/4/hw4-log.txt">sample log</option>
+							<option value="homework/4/hw4-output.txt">output for personality.txt</option>
+							<option value="homework/4/bigoutput.txt">output for bigdata.txt</option>
+						<optgroup id="a3" label="HW3 (Bagels)" class="creativeend">
+							<option value="homework/3/expected_output_1.txt">expected output, 1 digit</option>
+							<option value="homework/3/expected_output_2.txt">expected output, 2 digits</option>
+							<option value="homework/3/expected_output_3.txt">expected output, 3 digits</option>
+							<option value="homework/3/expected_output_4.txt">expected output, 4 digits</option>
+							<option value="homework/3/expected_output_5.txt">expected output, instant win</option>
+							<option value="homework/3/expected_output_6.txt">expected output, multiple games</option>
+							<option value="homework/3/expected_output_7.txt">expected output, multi digits</option>
+							<option value="homework/3/expected_output_8.txt">expected output, allowed input</option>
+						</optgroup>
+						<optgroup id="a1" label="HW1 (Song)" class="creativeend">
+							<option value="homework/1/expected_output.txt">expected output</option>
+						</optgroup>
+
+                                                    <!--
+						<optgroup label="Lecture">
+							<option value="lectures/size3.txt">diamond example, size 3</option>
+							<option value="lectures/size8.txt">diamond example, size 8</option>
+						</optgroup>
+						-->
+					</select>
+
+					<span id="loading" style="display: none">
+						<img src="images/progress.gif" tppabs="https://courses.cs.washington.edu/courses/cse143x/16au/images/progress.gif" alt="loading..." />
+						Downloading...
+					</span>
+				</td>
+
+				<td>
+
+					Actual text: <span id="actualchars">(0 characters selected)</span><br />
+					<em>(paste your program's output below)</em>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<textarea class="expected" id="expectedtext" cols="50" rows="20" wrap="off"></textarea>
+
+				</td>
+
+				<td>
+
+					<textarea class="actual" id="actualtext" cols="50" rows="20" wrap="off"></textarea>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2" style="text-align: center">
+					<div id="linenumbersarea">
+
+						Line numbers:
+						<button id="add">Add</button>
+						<button id="remove">Remove</button>
+					</div>
+
+					<div id="stripwhitespacearea">
+<!--
+						Creative output?
+						<label>
+							<input type="checkbox" id="creativestart" />
+							at start
+						</label>
+						<label>
+							<input type="checkbox" id="creativeend" />
+							at end
+						</label> <br />
+-->
+
+						<label>
+							<input type="checkbox" id="stripwhitespace" />
+
+							Ignore spaces at start of lines
+						</label>
+					</div>
+
+					<div id="comparearea">
+						<button id="compare">Compare</button>
+					</div>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td colspan="2">
+					<div id="diffarea" style="display: none">
+						<h2 id="differencesheader">Differences:</h2>
+						
+						<div id="warnings"></div>
+						
+						<pre id="result"></pre>
+					</div>
+				</td>
+			</tr>
+
+		</table>
+
+		<!--
+		<p><i>For Homework 5 (Guess2D), since the program uses random numbers, you may not be able to reproduce the exact logs shown.  They are posted mainly as examples to follow for formatting purposes.  If you do want to match them exactly, you can "seed" your Random number generator by passing an int to its constructor, which causes it to produce the same sequence of numbers every time.  (This is good for testing, but not good for the final game, because it takes away the true randomness.)  The int to pass for each case is the following:</i></p>
+
+		<ul>
+		<li>Test #1: &nbsp;&nbsp;&nbsp; <tt>&nbsp;&nbsp;42</tt> &nbsp;&nbsp;&nbsp;&nbsp; e.g. &nbsp;&nbsp;&nbsp;&nbsp; <tt>Random r = new Random(42);</tt><br>
+		(also use seed of 42 for test w/ max of (5, 5) and max of (100, 100)
+		<li>Test #2: &nbsp;&nbsp;&nbsp; <tt>&nbsp;420</tt> &nbsp;&nbsp;&nbsp;&nbsp; e.g. &nbsp;&nbsp;&nbsp;&nbsp; <tt>Random r = new Random(420);</tt>
+		<li>Test #3: &nbsp;&nbsp;&nbsp; <tt>4200</tt> &nbsp;&nbsp;&nbsp;&nbsp; e.g. &nbsp;&nbsp;&nbsp;&nbsp; <tt>Random r = new Random(4200);</tt>
+		</ul>
+		-->
+
+		<div id="instructions">
+			<h2>
+				Instructions and Disclaimer:
+			</h2>
+
+			<ul>
+				<li>Choose the assignment from the drop-down box on the left.  (Its expected output should appear.)</li>
+				<li>Run your program and paste its output on the right.</li>
+
+				<li>Press Compare.  Any differences will be shown.</li>
+			</ul>
+
+			<p>
+				Any comparison lines that begin with a <code>&lt;</code> are those that occur in the expected output but are not found in the same place in your output.  Lines that begin with a <code>&gt;</code> are those that occur in your output but are not found in the same place in the expected output.
+			</p>
+
+			<p>
+				Some assignments have creative output.  In the expected output, this will be signified by text such as, <strong><code>&lt;&lt; your verse goes here &gt;&gt;</code></strong> .  You are not supposed to literally print this output from your program; you are supposed to print your own custom message in its place.  If this tool shows your custom message as being unmatched, this is expected.
+			</p>
+
+			<p>
+				Assignments that use random numbers may be impossible to match exactly in output unless you use a "seed" to your random number generator.  See the assignment's FAQ page for more details about how to do this.
+			</p>
+
+
+			<p>
+				NOTE: Achieving &quot;No differences found&quot; on this page does not guarantee that you will earn any particular grade on an assignment.
+			</p>
+		</div>
+
+
+		<script type="text/javascript" src="../../../../ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js" tppabs="https://ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js"></script>
+		<script type="text/javascript" src="../../../../ajax.googleapis.com/ajax/libs/scriptaculous/1.8.2/scriptaculous.js" tppabs="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.2/scriptaculous.js"></script>
+		<script type="text/javascript" src="diff.js" tppabs="https://courses.cs.washington.edu/courses/cse143x/16au/diff.js"></script>
+	</body>
+</html>

@@ -1,5 +1,4 @@
 # Project Trinnect
-## Web design, Python programming, and data structure.
 * Developer: Hongjun Wu
 
 ## Web Design

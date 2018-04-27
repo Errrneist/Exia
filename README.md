@@ -3,16 +3,29 @@
 * Developer: Hongjun Wu
 
 ## Web Design
-#### Trinnect
+### Website Development
+#### Project Trinnect
 * Trinnect is a website and domain that I bought and test all kinds of experiments. It is currently hosting on a respberry pi machine test server.
 * Currently, the structure is HTML based and made possible using HTML template.
 #### Project Elder
 * As a fan of the man who changed China, I made a website devote to HIM. The structure and most of the contents of the project was finished on 2016.08.17 which is HIS 90th birthday. This project might be taken out as a own repository. This is the previous elder.hk and is now a sub page under trinnect.com due to funding. The origional domain and host server was shut down due to lacck of funding.
 
 ## Python
-* Developed a script to refresh and find apartments.
+### Web Scraping
+#### Project HFS (Use it at your own risk)
+* A Jupyter Notebook that will refresh the page and search for apartments for HFS housing search page. 
 ## Data Processing
 
 ## Other resources
 
-This project is to test all kind of different web based Python technologies.
+## Credits
+### Thanks for the developers for developing these awesome softwares.
+* Python
+* Anaconda
+* Google
+* Selenium
+* urlLib
+* Microsoft
+* Apple
+* smtpLib
+

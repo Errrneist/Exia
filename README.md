@@ -17,6 +17,8 @@
 
 ## Python
 ### Web Scraping
+#### Project Notify
+* Still in development.
 ## Data Processing
 
 ## Other resources

@@ -32,4 +32,5 @@
 * [Homebrew](https://brew.sh/)
 * [PHP](http://www.php.net/)
 * [MySQL](https://www.mysql.com/)
+* [Oracle](https://www.oracle.com/)
 

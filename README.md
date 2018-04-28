@@ -16,13 +16,20 @@
 ## Other resources
 
 ## Credits
-### Thanks for the developers for developing these awesome softwares.
-* Python
-* Anaconda
-* Google
-* Selenium
-* urlLib
-* Microsoft
-* Apple
-* smtpLib
+### Thanks for the developers for developing these awesome softwares and packages.
+* [Python](https://www.python.org/)
+* [Anaconda](https://anaconda.org/)
+* [Google](https://www.google.com)
+* [Selenium](http://selenium-python.readthedocs.io/)
+* [urlLib](https://www.npmjs.com/package/urllib)
+* [Microsoft](https://www.microsoft.com/)
+* [Apple](https://www.apple.com/)
+* [smtpLib](https://pymotw.com/2/smtplib/)
+* [numPy](http://www.numpy.org/)
+* [Redis](https://redis.io/)
+* [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+* [Requests](http://docs.python-requests.org/en/master/)
+* [Homebrew](https://brew.sh/)
+* [PHP](http://www.php.net/)
+* [MySQL](https://www.mysql.com/)
 

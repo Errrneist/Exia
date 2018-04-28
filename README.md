@@ -11,8 +11,6 @@
 
 ## Python
 ### Web Scraping
-#### Project HFS (Use it at your own risk)
-* A Jupyter Notebook that will refresh the page and search for apartments for HFS housing search page. 
 ## Data Processing
 
 ## Other resources

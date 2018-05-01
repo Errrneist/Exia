@@ -17,8 +17,8 @@
 
 ## Python
 ### Web Scraping
-#### Project Notify
-* Still in development.
+#### Project Notify_HFS
+* A Jupyter Notebook to refresh HFS page.
 ## Data Processing
 
 ## Other resources

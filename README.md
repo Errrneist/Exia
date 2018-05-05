@@ -1,5 +1,6 @@
 # Project Trinnect
 * Developer: Hongjun Wu
+* The purpose of this repository is to store and index all the python and web projects I've done.
 
 ## Web Design
 #### Website Development

@@ -17,7 +17,7 @@
 
 ## Python
 ### Web Scraping
-#### Project Notify_HFS
+#### [Project Notify_HFS](https://github.com/Errrneist/Trinnect/blob/master/Python/notify_HFS/findApartment.ipynb)
 * A Jupyter Notebook to refresh HFS page.
 ## Data Processing
 

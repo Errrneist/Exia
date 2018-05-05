@@ -2,7 +2,7 @@
 * Developer: Hongjun Wu
 * The purpose of this repository is to store and index all the python and web projects I've done.
 ## Special Thanks
-* [Dr. Qing Liu](http://oeasy.org)
+* [Mr. Qing Liu](http://daxue.netbig.com/26/teacher/826634/)
 
 ## Web Design
 #### Website Development

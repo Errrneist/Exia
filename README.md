@@ -15,10 +15,10 @@
 * Videos are missing due to volume constraint. But if you are high level enough you can find it online.
 
 ## Python
-### Web Scraping
-#### [Project Notify_APT](https://github.com/Errrneist/Trinnect/blob/master/Python/notify_HFS/findApartment.ipynb)
+#### Web Scraping
+##### [Project Notify_APT](https://github.com/Errrneist/Trinnect/blob/master/Python/notify_HFS/findApartment.ipynb)
 * A Jupyter Notebook to refresh a page specifically with specific labels and data tables.
-## Data Processing
+#### Data Processing
 
 ## Other resources
 

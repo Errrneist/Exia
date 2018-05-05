@@ -2,8 +2,8 @@
 * Developer: Hongjun Wu
 
 ## Web Design
-### Website Development
-#### Project Trinnect
+#### Website Development
+##### Project Trinnect
 * Trinnect is a website and domain that I bought and test all kinds of experiments. 
 * It is currently hosting on a respberry pi machine test server. 
 * Currently, the structure is HTML based and made possible using HTML template.

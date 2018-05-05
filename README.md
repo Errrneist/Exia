@@ -5,13 +5,12 @@
 ### Website Development
 #### Project Trinnect
 * Trinnect is a website and domain that I bought and test all kinds of experiments. 
-* It is currently hosting on a respberry pi machine test server.
+* It is currently hosting on a respberry pi machine test server. 
 * Currently, the structure is HTML based and made possible using HTML template.
 * No backend support added in yet.
-#### Project Elder
-* As a fan of the man who changed China, I made a website devote to HIM. 
-* The structure and most of the contents of the project was finished on 2016.08.17 which is HIS 90th birthday. 
-* This project might be taken out as a own repository. 
+#### [Project Elder](https://github.com/Errrneist/Trinnect/tree/master/Elder)
+* As a fan of the MAN who changed China, I made a website devote to HIM. 
+* The structure and most of the contents was finished on 2016.08.17 which is HIS 90th birthday. 
 * This is the previous elder.hk and is now a sub page under trinnect.com due to funding. 
 * The origional domain and host server was shut down due to lacck of funding.
 

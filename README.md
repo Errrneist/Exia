@@ -12,7 +12,7 @@
 * As a fan of the MAN who changed China, I made a website devote to HIM. 
 * The structure and most of the contents was finished on 2016.08.17 which is HIS 90th birthday. 
 * This is the previous elder.hk and is now a sub page under trinnect.com due to lack of funding. 
-* Videos are missing due to the volume constraint. But if you are high level enough you can find it.
+* Videos are missing due to volume constraint. But if you are high level enough you can find it online.
 
 ## Python
 ### Web Scraping

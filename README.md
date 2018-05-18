@@ -38,7 +38,7 @@
 * [Selenium](http://selenium-python.readthedocs.io/)
 * [urlLib](https://www.npmjs.com/package/urllib)
 * [Microsoft](https://www.microsoft.com/)
-* [Apple](https://www.apple.com/)
+* [Apple Turicreate](https://apple.github.io/turicreate/docs/api/index.html)
 * [smtpLib](https://pymotw.com/2/smtplib/)
 * [numPy](http://www.numpy.org/)
 * [Redis](https://redis.io/)

@@ -24,7 +24,6 @@
 
 ## Other resources
 * [Stackoverflow](https://stackoverflow.com)
-* [Turicreate API](https://apple.github.io/turicreate/docs/api/index.html)
 
 ## Credits
 ### Thanks for the developers for developing these awesome softwares and packages.

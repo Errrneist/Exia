@@ -17,13 +17,18 @@
 * This is the previous elder.hk and is now a sub page under trinnect.com due to lack of funding. 
 * Videos are missing due to volume constraint. But if you are high level enough you can find it online.
 
-## Python
+## Python Web Development
 #### Web Scraping
 ##### [Project Notify_APT](https://github.com/Errrneist/Trinnect/blob/master/Python/notify_HFS/findApartment.ipynb)
 * A Jupyter Notebook to refresh a page specifically with specific labels and data tables.
-#### Data Processing
+
+## Python Machine Learning
+#### Turicreate
+* Notebooks on using turicreate to process and train on massive data.
 
 ## Other resources
+* [Stackoverflow](https://stackoverflow.com)
+* [Turicreate API](https://apple.github.io/turicreate/docs/api/index.html)
 
 ## Credits
 ### Thanks for the developers for developing these awesome softwares and packages.
@@ -43,4 +48,5 @@
 * [PHP](http://www.php.net/)
 * [MySQL](https://www.mysql.com/)
 * [Oracle](https://www.oracle.com/)
-
+* [Spyder](https://pythonhosted.org/spyder/installation.html)
+* [Jupyter](http://jupyter.org)

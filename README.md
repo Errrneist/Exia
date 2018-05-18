@@ -22,10 +22,6 @@
 ##### [Project Notify_APT](https://github.com/Errrneist/Trinnect/blob/master/Python/notify_HFS/findApartment.ipynb)
 * A Jupyter Notebook to refresh a page specifically with specific labels and data tables.
 
-## Python Machine Learning
-#### Turicreate
-* Notebooks on using turicreate to process and train on massive data.
-
 ## Other resources
 * [Stackoverflow](https://stackoverflow.com)
 * [Turicreate API](https://apple.github.io/turicreate/docs/api/index.html)
